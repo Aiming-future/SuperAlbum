@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.StrivingRookies.superalbum.ui_menu">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name="com.StrivingRookies.superalbum.ui_menu.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_face"
+        android:label="SuperAlbum"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name="com.StrivingRookies.superalbum.ui_login.ui.login.SplashActivity"
+            android:noHistory="true"
+            android:theme="@style/FullscreenTheme">
+                        <intent-filter>
+                            <action android:name="android.intent.action.MAIN" />
+
+                            <category android:name="android.intent.category.LAUNCHER" />
+                        </intent-filter>
+        </activity>
+        <activity android:name="com.StrivingRookies.superalbum.ui_login.ui.login.GuideActivity">
+        </activity>
+        <activity
+            android:name="com.StrivingRookies.superalbum.ui_login.ui.login.LoginActivity"
+            android:label="超級相冊">
+<!--            <intent-filter>-->
+<!--            <action android:name="android.intent.action.MAIN" />-->
+
+<!--            <category android:name="android.intent.category.LAUNCHER" />-->
+<!--        </intent-filter>-->
+        </activity>
+        <activity
+            android:name="com.StrivingRookies.superalbum.ui_menu.SampleActivity"
+
+            android:theme="@style/FullscreenTheme">
+<!--            <intent-filter>-->
+<!--            <action android:name="android.intent.action.MAIN" />-->
+
+<!--            <category android:name="android.intent.category.LAUNCHER" />-->
+<!--        </intent-filter>-->
+        </activity>
+        <activity android:name="com.StrivingRookies.superalbum.ui_menu.AboutApp"
+            android:label="SuperAlbum"
+            android:theme="@style/AppTheme"/>
+        <activity android:name="com.StrivingRookies.superalbum.ui_menu.CloudAlbum"
+            android:label="SuperAlbum"
+            android:theme="@style/AppTheme"/>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.StrivingRookies.superalbum.ui_menu.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths_public" />
+        </provider>
+
+
+
+        <activity android:name="com.StrivingRookies.superalbum.ui_menu.SampleFragments" />
+    </application>
+
+</manifest>

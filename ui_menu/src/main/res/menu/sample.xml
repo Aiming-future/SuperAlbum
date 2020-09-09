@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <item
+        android:id="@+id/gallery"
+        android:actionLayout="@layout/app_bar_sample"
+        android:title="画廊"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/phone_photo"
+        android:title="手机相册"
+
+        android:iconTint="@color/text_sticker_yellow_easy_photos"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/smart_photo"
+        android:title="智能分类"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/time_photo"
+        android:title="时光"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/aboutapp"
+        android:title="关于"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="测试"
+        android:visible="false"
+        app:showAsAction="never" />
+</menu>

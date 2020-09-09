@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cloudcontainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.stx.xhb.xbanner.XBanner
+        android:id="@+id/cloudxban"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:AutoPlayTime="3000"
+        app:isAutoPlay="false"
+        app:isShowIndicatorOnlyOne="true"
+        app:isShowNumberIndicator="true"
+        app:pageChangeDuration="800"
+        app:pointsContainerBackground="#44aaaaaa"
+        app:pointsPosition="RIGHT"
+        app:tipTextSize="12sp" >
+
+        <ImageView
+            android:id="@+id/cloudback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:srcCompat="@drawable/ic_arrow_back_easy_photos"
+            tools:ignore="VectorDrawableCompat"></ImageView>
+
+        <ImageView
+            android:id="@+id/syntolocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tooltipText="同步到本地"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            app:srcCompat="@android:drawable/stat_sys_download"
+
+            tools:ignore="VectorDrawableCompat"></ImageView>
+    </com.stx.xhb.xbanner.XBanner>
+
+</FrameLayout>

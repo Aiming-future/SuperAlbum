@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:fitsSystemWindows="true"
+    >
+
+    <com.stx.xhb.xbanner.XBanner
+    android:id="@+id/xbanner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:AutoPlayTime="3000"
+    app:isShowIndicatorOnlyOne="true"
+
+    app:isShowNumberIndicator="true"
+    app:pageChangeDuration="800"
+    app:pointsContainerBackground="#44aaaaaa"
+    app:pointsPosition="RIGHT"
+    app:tipTextSize="12sp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:spinnerMode="dropdown"
+                />
+
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/playButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="280dp"
+            android:layout_marginLeft="180dp"
+            android:clickable="false"
+
+            app:srcCompat="@drawable/play0" />
+
+
+    </com.stx.xhb.xbanner.XBanner>
+</LinearLayout>

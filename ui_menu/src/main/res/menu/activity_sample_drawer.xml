@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="基本功能">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/camera"
+                    android:icon="@drawable/ic_menu_camera"
+                    android:title="@string/camera" />
+                <item
+                    android:id="@+id/album_has_video_gif"
+                    android:icon="@drawable/gallary"
+                    android:background="@color/black"
+
+                    android:title="相冊信息" />
+                <item
+                    android:id="@+id/nav_picvideo"
+                    android:icon="@drawable/ic_menu_slideshow"
+                    android:title="幻灯片" />
+                <item
+                    android:id="@+id/nav_picCloud"
+                    android:icon="@drawable/ic_menu_gallery"
+                    android:title="云相册" />
+                <item
+                    android:id="@+id/nav_trash"
+                    android:icon="@drawable/home_refresh"
+                    android:background="@color/black"
+                    android:title="回收站" />
+                <item
+                    android:id="@+id/nav_settings"
+                    android:icon="@drawable/ic_menu_manage"
+                    android:title="设置" />
+                <item
+                    android:id="@+id/album_single"
+                    android:visible="false"
+
+                    android:title="@string/album_single" />
+                <item
+                    android:id="@+id/album_multi"
+                    android:visible="false"
+
+                    android:title="@string/album_multi" />
+                <item
+                    android:id="@+id/album_camera_single"
+                    android:visible="false"
+
+                    android:title="@string/album_camera_single" />
+
+                <item
+                    android:id="@+id/album_camera_multi"
+                    android:visible="false"
+
+                    android:title="@string/album_camera_multi" />
+
+                <item
+                    android:id="@+id/album_ad"
+                    android:visible="false"
+
+                    android:title="@string/album_ad" />
+
+                <item
+                    android:id="@+id/album_size"
+                    android:visible="false"
+
+                    android:title="@string/album_size" />
+
+                <item
+                    android:id="@+id/album_selected"
+                    android:visible="false"
+
+                    android:title="@string/album_selected" />
+
+                <item
+                    android:id="@+id/album_original_usable"
+                    android:visible="false"
+
+                    android:title="@string/album_original_usable" />
+
+                <item
+                    android:id="@+id/album_original_unusable"
+                    android:visible="false"
+
+                    android:title="@string/album_original_unusable" />
+
+
+
+                <item
+                    android:id="@+id/album_only_video"
+                    android:visible="false"
+                    android:title="相册（仅有video）" />
+
+                <item
+                    android:id="@+id/album_no_menu"
+                    android:visible="false"
+                    android:title="@string/album_no_menu" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="高级功能">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/upLoadpic"
+                    android:title="上传云端" />
+                <item
+                    android:id="@+id/LoadtoLoacl"
+                    android:title="同步到本地"
+                    android:visible="false"
+                    />
+                <item
+                    android:id="@+id/addWatermark"
+                    android:title="添加水印" />
+
+                <item
+                    android:id="@+id/puzzle"
+                    android:title="拼图" />
+
+                <item
+                    android:id="@+id/doodle"
+                    android:title="涂鸦" />
+
+                <item
+                    android:id="@+id/face_detection"
+                    android:title="@string/face_detection"
+                    android:visible="false" />
+                <item
+                    android:id="@+id/delete"
+                    android:title="删除" />
+
+            </group>
+        </menu>
+    </item>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+        </menu>
+    </item>
+
+</menu>
