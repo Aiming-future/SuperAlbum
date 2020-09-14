@@ -35,8 +35,8 @@ public class loadHelper {
     private static final String ENDPOINT = "https://oss-cn-shenzhen.aliyuncs.com";
     //上传仓库名
     private static final String BUCKET_NAME = "superalbum";
-    private static final String ACCESS_ID ="LTAI4GBbddyHN28T6xr8n3H8";
-    private static final String ACCESS_KEY ="Vs4CUJFlWDQYHtJ9UXLnhBDFdbpZzT";
+    private static final String ACCESS_ID =；
+    private static final String ACCESS_KEY =；
     private OSSClient oss;
 
     private static Context cxt;
