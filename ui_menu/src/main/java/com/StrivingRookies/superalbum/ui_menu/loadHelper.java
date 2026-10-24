@@ -59,10 +59,6 @@ public class loadHelper {
         OSSClient oss = new OSSClient(cxt, ENDPOINT, credentialProvider, conf);
 
 
-
-//        OSSCredentialProvider credentialProvider =
-//                new OSSPlainTextAKSKCredentialProvider("LTAI4GBbddyHN28T6xr8n3H8" ,
-//                        "Vs4CUJFlWDQYHtJ9UXLnhBDFdbpZzT");
         return oss;
     }
 
