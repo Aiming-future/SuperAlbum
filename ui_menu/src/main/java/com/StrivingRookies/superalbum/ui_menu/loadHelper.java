@@ -58,11 +58,6 @@ public class loadHelper {
         // oss为全局变量，OSS_ENDPOINT是一个OSS区域地址
         OSSClient oss = new OSSClient(cxt, ENDPOINT, credentialProvider, conf);
 
-
-
-//        OSSCredentialProvider credentialProvider =
-//                new OSSPlainTextAKSKCredentialProvider("LTAI4GBbddyHN28T6xr8n3H8" ,
-//                        "Vs4CUJFlWDQYHtJ9UXLnhBDFdbpZzT");
         return oss;
     }
 
